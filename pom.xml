@@ -1,0 +1,82 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>training</groupId>
+  <artifactId>springboot</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <description>SpringBoot基礎</description>
+
+  <parent>
+    <!-- SpringBoot Parentの設定 -->
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.6.4</version>
+  </parent>
+
+  <properties>
+    <log4j2.version>2.17.2</log4j2.version>
+  </properties>
+
+  <dependencies>
+    <!-- SpringBoot の設定 Web指定する -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+      <version>2.6.4</version>
+    </dependency>
+
+    <!-- SpringBoot から Thymeleafを利用するための設定 -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-thymeleaf</artifactId>
+      <version>2.6.4</version>
+    </dependency>
+
+    <!-- SQLite の設定 DB接続用にJDBCを指定する -->
+    <dependency>
+      <groupId>org.xerial</groupId>
+      <artifactId>sqlite-jdbc</artifactId>
+      <version>3.36.0.3</version>
+    </dependency>
+
+    <!-- MyBatis の設定 DBフレームワークの指定をする -->
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis</artifactId>
+      <version>3.5.9</version>
+    </dependency>
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis-spring</artifactId>
+      <version>2.0.7</version>
+    </dependency>
+
+    <!-- JDBCの設定 -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-jdbc</artifactId>
+      <version>2.6.4</version>
+    </dependency>
+
+    <!-- Thymeleaf の設定 画面テンプレートエンジンの指定をする -->
+    <dependency>
+      <groupId>org.thymeleaf</groupId>
+      <artifactId>thymeleaf</artifactId>
+      <version>3.0.15.RELEASE</version>
+    </dependency>
+
+    <!-- lombok の設定 DTOなど、setter/getterのみのクラスでコーディング量を減らせるライブラリの指定をする -->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.22</version>
+    </dependency>
+
+    <!-- validator の設定 -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-validation</artifactId>
+      <version>2.6.4</version>
+    </dependency>
+  </dependencies>
+</project>

@@ -1,0 +1,1 @@
+spring:  datasource:    url: jdbc:sqlite:training-springboot.db    driver-class-name: org.sqlite.JDBC
